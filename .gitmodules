@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/bingryan/explorer-api.git
+[submodule "converter"]
+	path = converter
+	url = https://github.com/bingryan/explorer-converter.git
