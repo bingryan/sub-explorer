@@ -2,7 +2,7 @@ version: '3'
 
 
 services:
-  api: &api
+  api:
     build:
       context: .
       dockerfile: ./api/Dockerfile
@@ -24,7 +24,6 @@ services:
     ports:
       - "8888:8888"
     expose:
-      # Opens port 8001 on the container
       - '8888'
     command: /start
 

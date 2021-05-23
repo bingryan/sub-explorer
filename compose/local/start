@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+echo "--------------------service-start--------------------------------"
+
+diesel migration run
+ROCKET_ENV=staging cargo run
+
+echo "--------------------service-start--------------------------------"
